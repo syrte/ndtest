@@ -16,6 +16,9 @@ def ks2d2s(x1, y1, x2, y2, nboot=None, extra=False):
         Data of sample 1.
     x2, y2 : ndarray, shape (n2, )
         Data of sample 2. Size of two samples can be different.
+    nboot : None or int
+        Number of bootstrap resample to estimate the p-value. A large number is expected.
+        If None, an approximate analytic estimate will be used.
     extra: bool, optional
         If True, KS statistic is also returned. Default is False.
 
@@ -24,16 +27,19 @@ def ks2d2s(x1, y1, x2, y2, nboot=None, extra=False):
     p : float
         Two-tailed p-value.
     D : float, optional
-        KS statistic. Returned if keyword `extra` is True.
+        KS statistic, returned if keyword `extra` is True.
 
     Notes
     -----
-    This is the two-sided K-S test. Small p-values means that the two samples are significantly different. Note that the p-value is only an approximation as the analytic distribution is unkonwn. The approximation is accurate enough when N > ~20 and p-value < ~0.20 or so. When p-value > 0.20, the value may not be accurate, but it certainly implies that the two samples are not significantly different. (cf. Press 2007)
+    This is the two-sided K-S test. Small p-values means that the two samples are significantly different. 
+    Note that the p-value is only an approximation as the analytic distribution is unkonwn. The approximation
+    is accurate enough when N > ~20 and p-value < ~0.20 or so. When p-value > 0.20, the value may not be accurate,
+    but it certainly implies that the two samples are not significantly different. (cf. Press 2007)
 
     References
     ----------
-    Peacock, J.A. 1983, Two-Dimensional Goodness-of-Fit Testing in Astronomy, Monthly Notices of the Royal Astronomical Society, vol. 202, pp. 615-627
-    Fasano, G. and Franceschini, A. 1987, A Multidimensional Version of the Kolmogorov-Smirnov Test, Monthly Notices of the Royal Astronomical Society, vol. 225, pp. 155-170
+    Peacock, J.A. 1983, Two-Dimensional Goodness-of-Fit Testing in Astronomy, MNRAS, 202, 615-627
+    Fasano, G. and Franceschini, A. 1987, A Multidimensional Version of the Kolmogorov-Smirnov Test, MNRAS, 225, 155-170
     Press, W.H. et al. 2007, Numerical Recipes, section 14.8
 
     '''
