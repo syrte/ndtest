@@ -26,5 +26,6 @@ print(f"{P=:.3g}, {D=:.3g}")
 P, D = ndtest.ks2d2s(x1, y1, x3, y3, extra=True)
 print(f"{P=:.3g}, {D=:.3g}")
 # P=2.36e-05, D=0.385  # very small P, as expected.
-
 ```
+
+See the docstring for the detailed usage and explanation.
