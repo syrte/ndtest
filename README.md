@@ -4,7 +4,7 @@ Multi-dimensional statistical test with python
 - 2D Kolmogorov–Smirnov test (KS test)
 - 1D and 2D energy distance statistics test
 
-The code has been cited in 16 papers 
+The code has been cited in 20 papers 
 according to [Google Scholar](https://scholar.google.com/scholar?q=%22syrte%2Fndtest%22) :star_struck:
 
 ## Usage example
