@@ -1,1 +1,1 @@
-from ndtest import *
+from .ndtest import *
