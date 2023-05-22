@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/syrte/ndtest/',
-    keywords=['Fortran', 'Numpy'],
+    keywords=['statistics', 'statistical test', 'Python'],
     author='Zhaozhou Li',
     author_email='lizz.astro@gmail.com',
     py_modules=['ndtest'],
