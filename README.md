@@ -4,10 +4,10 @@ Multi-dimensional statistical tests with python
 - 2D Kolmogorov–Smirnov test (KS test)
 - 1D and 2D energy distance statistics test
 
+## Citation
 The code has been cited in ~40 papers 
 according to [Google Scholar](https://scholar.google.com/scholar?q=%22syrte%2Fndtest%22) :star_struck:
 
-## Citation
 If you used this *code* in your paper, I would be grateful for a simple footnote mentioning the author and URL of this repo,
 such as
 ```
@@ -15,6 +15,7 @@ We perform the 2D Kolmogorov–Smirnov test ...
 using the public code \textsc{ndtest}\footenote{Written by Zhaozhou Li, \url{https://github.com/syrte/ndtest}}.
 ```
 As to references for the *algorithms*, please check the docstrings.
+
 
 ## Installation
 
