@@ -45,3 +45,8 @@ print(f"{P=:.3g}, {D=:.3g}")
 ```
 
 See the docstring for the detailed usage and explanation.
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=syrte/ndtest&type=Date)](https://star-history.com/#syrte/ndtest&Date)
